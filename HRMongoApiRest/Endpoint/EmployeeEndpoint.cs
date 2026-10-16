@@ -6,7 +6,7 @@ namespace HRMongoApiRest.Endpoint
     {
         public static void MapEmployeeEndpoint(this IEndpointRouteBuilder app)
         {
-            var group = app.MapGroup("/api/employee").WithTags("Employees");
+            var group = app.MapGroup("/api/employee").WithTags("Employees").RequireAuthorization();
 
             group.MapGet("/", GetAll);            
         }
