@@ -33,7 +33,7 @@ namespace HRMongoApiRest.Endpoint
                     Expires = DateTime.UtcNow.AddMinutes(30),
                     Issuer = "myapp.com",
                     Audience = "myapp.com",
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Xk9mP2vL8qR5tY7wZ3nB6cF1hJ4sD0aG9eU2iO5pM8")),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("xxx")),
                                            SecurityAlgorithms.HmacSha256)
                 });
 
